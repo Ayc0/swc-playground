@@ -3,7 +3,7 @@ import { ControlledEditor } from "@monaco-editor/react";
 
 interface EditorProps {
     value: string;
-    onChange: (event: Event, value: string) => void;
+    onChange: (event: any, value: string) => void;
     language?: "javascript" | "json";
 }
 

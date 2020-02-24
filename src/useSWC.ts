@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export const useSWC = (code: string) => {
     const [transformedCode, setTransformedCode] = useState("");
     useEffect(() => {
-        fetch(`${process.env.ENDPOINT || ""}/transform`, {
+        fetch(`/api/transform`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
